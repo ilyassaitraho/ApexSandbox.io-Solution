@@ -6,4 +6,4 @@ public String whichTwo(Integer a, Integer b, Integer c) {
     } else if (b + c == a) {
         return a;  
     }
-    return '';  // No two add up to the third
+    return '';  

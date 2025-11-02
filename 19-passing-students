@@ -1,0 +1,19 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    if ((!passedExam && !passedProject) || 
+        (!passedAssignments && !passedExam) || 
+        (!passedAssignments && !passedProject)) {
+        return false;
+    }
+    return true;
+}
+/* or this also works 
+apexpublic Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    Integer passCount = 0;
+    
+    if (passedExam) passCount++;
+    if (passedAssignments) passCount++;
+    if (passedProject) passCount++;
+    
+    return passCount >= 2;  // Need at least 2 to pass
+}
+*/

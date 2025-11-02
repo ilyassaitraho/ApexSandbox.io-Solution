@@ -1,9 +1,9 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     if (a + b == c) {
-        return 'c';  // c is the sum of a and b
+        return 'c';  
     } else if (a + c == b) {
-        return 'b';  // b is the sum of a and c
+        return 'b';  
     } else if (b + c == a) {
-        return 'a';  // a is the sum of b and c
+        return 'a';  
     }
     return '';  // No two add up to the third

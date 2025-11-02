@@ -1,0 +1,8 @@
+public String aOrAn(String word) {
+    String a = word ; 
+    String vowel = 'aeiou';
+    if (vowel.containsIgnoreCase(a.substring(0, 1))){
+        return 'an '+a ;
+    }
+    return 'a '+a ; 
+}

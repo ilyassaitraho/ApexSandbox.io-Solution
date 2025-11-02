@@ -1,6 +1,6 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     if (a + b == c) {
-        return c;  
+        return a +'and '+b +'adds up to '+ c;  
     } else if (a + c == b) {
         return b;  
     } else if (b + c == a) {

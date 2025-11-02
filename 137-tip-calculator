@@ -1,4 +1,4 @@
 public Decimal computeTip(Decimal total, Integer percent) {
-    Decimal finaBill = total*(percent / 100.0) ;
+    Decimal finaBill = total*percent / 100.0 ;
     return finalBill ;
 }

@@ -1,0 +1,14 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    String plants = plant1+plant2;
+
+    if ( plants.containsIgnoreCase('onions') && plants.containsIgnoreCase('lettuce') ){
+        return true ;
+    } else if (plants.containsIgnoreCase('lettuce') && plants.containsIgnoreCase('cucumbers') ){
+        return true ;
+    } else if (plants.containsIgnoreCase('onions') && plants.containsIgnoreCase('carrots')){
+        return true ; 
+    } else if (plants.containsIgnoreCase('onions') && plants.containsIgnoreCase('tomatoes')){
+        return true ; 
+    }
+    return false ; 
+}

@@ -6,6 +6,8 @@ public Boolean isLeapYear(Integer year) {
         return true; 
     } else if ( by4 == 0 && by100 == 0 && by400 != 0){
         return false; 
+    }else if( by4 == 0 && by100 != 0) {
+        return true ;
     }
     return false ;
 }

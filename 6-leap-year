@@ -2,9 +2,9 @@ public Boolean isLeapYear(Integer year) {
     integer by4 = Math.mod(year , 4);
     integer by100 = Math.mod(year , 100) ; 
     integer by400 = Math.mod(year , 400) ; 
-    if ( by4 == 0 ){
+    if ( by4 == 0 && by100 == 0 && by400 == 0){
         return true; 
-    } else if ( by100 == 0 && by400 != 0){
+    } else if ( by4 == 0 && by100 == 0 && by400 != 0){
         return false; 
     }
     return false ;

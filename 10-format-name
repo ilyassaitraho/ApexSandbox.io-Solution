@@ -1,5 +1,6 @@
 public String formatName(String firstName, String lastName) {
     
-String formattedName = (String.IsBlank(lastName) ? ' ' : lastName+) +' '+ (String.IsBlank(firstName) ? ' ' : firstName);
-return formattedName;
+String formattedName = (String.isBlank(lastName) ? '' : lastName) + ', ' + (String.isBlank(firstName) ? '' : firstName);
+    return formattedName;
+}
 }

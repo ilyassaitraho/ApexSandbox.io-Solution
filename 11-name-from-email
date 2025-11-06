@@ -1,7 +1,7 @@
 public String nameFromEmail(String email) {
-    Integer middleindex = email.indexOf(.);
-    Integer secondIndex = email.indexOf(@);
+    Integer middleindex = email.indexOf('.');
+    Integer secondIndex = email.indexOf('@');
     String firstName = email.substring(0,middleindex) ;
-    String lastName = email.substring(middleindex , secondIndex ) ; 
+    String lastName = email.substring(middleindex+1 , secondIndex ) ; 
     return firstName+' '+lastName;
 }

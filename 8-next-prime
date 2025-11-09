@@ -1,6 +1,6 @@
 public Integer nextPrime(Integer num) {
     Boolean isNextPrime = false;
-    Integer i = num + 1;
+    Integer i = (num < 2) ? 2 : num + 1;
 
     while (!isNextPrime) {
         Boolean isPrime = true;

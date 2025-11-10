@@ -3,21 +3,14 @@ public String reverseWordsInASentence(String sentence){
     if(sentence == null){
         return null;
     }
-    // Remove leading and trailing spaces
     sentence = sentence.trim();
     
-    // Split the sentence into words
     List<String> words = sentence.split(' ');
-    
-    // Manually reverse the list
     List<String> reversedWords = new List<String>();
     for(Integer i = words.size() - 1; i >= 0; i--){
         reversedWords.add(words.get(i));
     }
     
-    // Join the words back together with spaces
     String reverseSentence = String.join(reversedWords, ' ');
-    
-    // Return the reversed sentence
     return reverseSentence;
 }

@@ -1,8 +1,10 @@
 public String reverseWordsInASentence(String sentence){
+    sentence = sentence.trim();
     
     List<String> words = sentence.split(' ');
     words.reverse();
     
     // Join the words back together with spaces
-    return String.join(words, ' ');
+    String reverseSentence = String.join(words, ' ');
+     return reverseSentence;
 }
